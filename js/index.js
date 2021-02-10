@@ -40,3 +40,72 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//nav
+
+let nav1 = document.querySelector('nav a')
+nav1.textContent = siteContent["nav"]["nav-item-1"]
+
+let nav2 = document.querySelector('nav a:nth-child(2)')
+nav2.textContent = siteContent["nav"]["nav-item-2"]
+
+let nav3 = document.querySelector('nav a:nth-child(3)')
+nav3.textContent = siteContent["nav"]["nav-item-3"]
+
+let nav4 = document.querySelector('nav a:nth-child(4)')
+nav4.textContent = siteContent["nav"]["nav-item-4"]
+
+let nav5 = document.querySelector('nav a:nth-child(5)')
+nav5.textContent = siteContent["nav"]["nav-item-5"]
+
+let nav6 = document.querySelector('nav a:nth-child(6)')
+nav6.textContent = siteContent["nav"]["nav-item-6"]
+
+//cta
+
+let header = document.querySelector('h1')
+header.textContent = siteContent['cta']['h1']
+
+let button = document.querySelector('button')
+button.textContent = siteContent['cta']['button']
+
+let bigImg = document.querySelector('#cta-img')
+bigImg.setAttribute('src', siteContent['cta']['img-src'])
+
+//main-content
+
+let mainHeader1 = document.querySelector('h4')
+mainHeader1.textContent = siteContent['main-content']['features-h4']
+
+let mainContent1 = document.querySelector('.text-content p')
+mainContent1.textContent = siteContent['main-content']['features-content']
+
+let mainHeader2 = document.querySelector('.text-content:nth-child(2) h4')
+mainHeader2.textContent = siteContent['main-content']['about-h4']
+
+let mainContent2 = document.querySelector('.text-content:nth-child(2) p')
+mainContent2.textContent = siteContent['main-content']['about-content']
+
+let midImg = document.querySelector('.middle-img')
+midImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
+
+let mainHeader3 = document.querySelector('.bottom-content .text-content h4')
+mainHeader3.textContent = siteContent['main-content']['service-h4']
+
+let mainContent3 = document.querySelector('.text-content p')
+mainContent4.textContent = siteContent['main-content']['features-content']
+
+let mainHeader4 = document.querySelector('.text-content:nth-child(4) h4')
+mainHeader4.textContent = siteContent['main-content']['features-h4']
+
+let mainContent4 = document.querySelector('.text-content p')
+mainContent4.textContent = siteContent['main-content']['features-content']
+
+let mainHeader5 = document.querySelector('.text-content:nth-child(5) h4')
+mainHeader5.textContent = siteContent['main-content']['features-h4']
+
+let mainContent5 = document.querySelector('.text-content p')
+mainContent5.textContent = siteContent['main-content']['features-content']
+
+
+
