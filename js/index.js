@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1": "DOM Is Awesome",
+    "h1": "DOM"+"<br>"+ "Is" +"<br>"+ "Awesome",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -28,7 +28,7 @@ const siteContent = {
   },
   "contact": {
     "contact-h4" : "Contact",
-    "address" : "123 Way 456 Street Somewhere, USA",
+    "address" : "123 Way 456 Street" + "<br>" + "Somewhere, USA",
     "phone" : "1 (888) 888-8888",
     "email" : "sales@greatidea.io",
   },
@@ -64,7 +64,8 @@ nav6.textContent = siteContent["nav"]["nav-item-6"]
 //cta
 
 let header = document.querySelector('h1')
-header.textContent = siteContent['cta']['h1']
+header.innerHTML = siteContent['cta']['h1']
+
 
 let button = document.querySelector('button')
 button.textContent = siteContent['cta']['button']
@@ -90,22 +91,54 @@ let midImg = document.querySelector('.middle-img')
 midImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
 
 let mainHeader3 = document.querySelector('.bottom-content .text-content h4')
-mainHeader3.textContent = siteContent['main-content']['service-h4']
+mainHeader3.textContent = siteContent['main-content']['services-h4']
 
-let mainContent3 = document.querySelector('.text-content p')
-mainContent4.textContent = siteContent['main-content']['features-content']
+let mainContent3 = document.querySelector('.bottom-content .text-content p')
+mainContent3.textContent = siteContent['main-content']['services-content']
 
-let mainHeader4 = document.querySelector('.text-content:nth-child(4) h4')
-mainHeader4.textContent = siteContent['main-content']['features-h4']
+let mainHeader4 = document.querySelector('.bottom-content .text-content:nth-child(2) h4')
+mainHeader4.textContent = siteContent['main-content']['product-h4']
 
-let mainContent4 = document.querySelector('.text-content p')
-mainContent4.textContent = siteContent['main-content']['features-content']
+let mainContent4 = document.querySelector('.bottom-content .text-content:nth-child(2) p')
+mainContent4.textContent = siteContent['main-content']['product-content']
 
-let mainHeader5 = document.querySelector('.text-content:nth-child(5) h4')
-mainHeader5.textContent = siteContent['main-content']['features-h4']
+let mainHeader5 = document.querySelector('.bottom-content .text-content:nth-child(3) h4')
+mainHeader5.textContent = siteContent['main-content']['vision-h4']
 
-let mainContent5 = document.querySelector('.text-content p')
-mainContent5.textContent = siteContent['main-content']['features-content']
+let mainContent5 = document.querySelector('.bottom-content .text-content:nth-child(3) p')
+mainContent5.textContent = siteContent['main-content']['vision-content']
 
+//contact
+
+let contactHeader = document.querySelector('.contact h4')
+contactHeader.textContent = siteContent['contact']['contact-h4']
+
+let address = document.querySelector('.contact p')
+address.innerHTML = siteContent['contact']['address']
+
+let phone = document.querySelector('.contact p:nth-child(3)')
+phone.textContent = siteContent['contact']['phone']
+
+let  email = document.querySelector('.contact p:nth-child(4)')
+email.textContent = siteContent['contact']['email'] 
+
+//footer
+
+let footer = document.querySelector('footer p')
+footer.textContent = siteContent['footer']['copyright']
+
+//part 2
+let newnav = document.querySelector('nav')
+
+let server = document.createElement('a')
+server.textContent = 'Server'
+newnav.appendChild(server)
+
+let ideas = document.createElement('a')
+ideas.textContent = 'Ideas'
+newnav.appendChild(ideas)
+
+let navStyle = document.querySelectorAll('a')
+navStyle.forEach(element => element.style.color = 'green')
 
 
