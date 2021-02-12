@@ -136,7 +136,7 @@ newnav.appendChild(server)
 
 let ideas = document.createElement('a')
 ideas.textContent = 'Ideas'
-newnav.appendChild(ideas)
+newnav.prepend(ideas)
 
 let navStyle = document.querySelectorAll('a')
 navStyle.forEach(element => element.style.color = 'green')
